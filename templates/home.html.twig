@@ -2,4 +2,58 @@
 
 {% block title %}Accueil{% endblock %}
 
-{% block body %}Hello World{% endblock %}
+{% block body %}
+    <!-- One -->
+    <section id="one">
+        <header class="inner">
+            <h1>Bienvenue à Embellir la vie</h1>
+        </header>
+        <div id="home-one">
+            <aside>
+                <div class="inner" id="presentation">
+
+                    <img src="{{ asset('images/home/elisabeth.webp') }}" id="portrait" class="image">
+                    <h2>L'association</h2>
+                    <p>Embellir la vie a été créée pour aider et encourager la création manuelle et artistique.</p>
+                </div>
+            </aside>
+
+            <div class="content" id="home-carousel">
+                <div class="image fit">
+                    <img src="{{ asset('images/home/sewing.jpg') }}" alt="" class="my-carousel"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="inner">
+            <h2>L'approche pédagogique</h2>
+            <p>
+                Redécouvrir le plaisir de créer, de dépasser ses limites, de s’enrichir en rencontrant d’autres personnes et
+                d’autres créateurs.
+                Concrètement : dès le début, on réalise un ouvrage ou une œuvre avec l’aide et les conseils du professeur.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="inner">
+            <h2>Embellir la vie organise</h2>
+            <ul>
+                <li>Des cours de couture, tricot, crochet, broderie</li>
+                <li>Des thés à l'aiguille</li>
+                <li>Des tages de couture pendant les vacances scolaires</li>
+                <li>Des ateliers
+                    <ul>
+                        <li>de décoration</li>
+                        <li>d'accessoires de mode, bijoux, sac, chapeaux</li>
+                        <li>préparation de fêtes</li>
+                        <li>adaptation pour les personnes handicapées</li>
+                    </ul>
+                </li>
+                <li>Des sorties culturelles</li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

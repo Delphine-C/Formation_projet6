@@ -48,6 +48,11 @@
 		-webkit-text-size-adjust: none;
 	}
 
+    #home-one {
+        display: flex;
+        flex-direction:row;
+    }
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -2378,6 +2383,14 @@
 				width: 100%;
 			}
 
+	.my-carousel {
+		width: 40%;
+		height: 10em;
+	}
+	
+	#portrait {
+		border-radius: 50%;
+	}
 /* List */
 
 	ol {
