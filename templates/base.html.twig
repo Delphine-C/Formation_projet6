@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"/>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+    <div class="inner">
+        <a href="#" class="logo">Embellir la vie</a>
+        <nav id="nav">
+            <a href="#">Accueil</a>
+            <a href="#">Les cours</a>
+            <a href="#">Diaporama</a>
+            <a href="#">Lieux, Horaires, Tarifs</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+</header>
+<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+
+    </div>
+</section>
+
+{% block body %}{% endblock %}
+
+<!-- Footer -->
+<section id="footer">
+    <div class="inner">
+    </div>
+    <div id="logo-asso">
+
+    </div>
+    <div class="copyright">
+        &copy; 2019 EMBELLIR LA VIE association loi 1901, affiliée à l’Office Municipal de la Culture de Maisons–Alfort.
+        Tout droit réservé.
+        <br>Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+    </div>
+    </div>
+</section>
+
+<!-- Scripts -->
+<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/js/skel.min.js') }}"></script>
+<script src="{{ asset('assets/js/util.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
+{% block javascripts %}{% endblock %}
+</body>
 </html>
