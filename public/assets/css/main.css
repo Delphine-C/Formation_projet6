@@ -2364,6 +2364,8 @@
 
 			.image.fit img {
 				width: 100%;
+				max-width: 90%;
+				margin: auto;
 			}
 
 		.image.main {
@@ -3205,7 +3207,7 @@
 		text-decoration: none;
 		height: 4em;
 		right: 3em;
-		top: .75em;
+		top: 1.5em;
 		width: 4em;
 		display: none;
 		z-index: 10002;
@@ -3255,7 +3257,7 @@
 			line-height: 2.25em;
 			position: absolute;
 			text-align: center;
-			top: 0.5em;
+			top: 1.5em;
 			width: 3.5em;
 		}
 
@@ -3491,17 +3493,6 @@
 			position: relative;
 			z-index: 10000;
 			line-height: 1.5;
-		}
-
-		#logo-asso {
-			color: #f2a3a5;
-			padding: 12em 0 1em 0;
-			background-image: url("../../images/logo.webp");
-			background-repeat: no-repeat;
-			background-position-x: center;
-			text-align: left;
-			position: relative;
-			z-index: 9999;
 		}
 
 			@media screen and (max-width: 480px) {
