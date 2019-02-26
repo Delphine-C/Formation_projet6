@@ -2559,9 +2559,18 @@
 				width: 90%;
 			}
 
-            .image.fit, .responsive {
+            .image.fit:not(.portrait), .responsive:not(.portrait) {
                 display: none;
             }
+
+            #portrait {
+                margin: auto;
+            }
+
+			.portrait {
+				padding-top: 0!important;
+				margin-bottom: 0!important;
+			}
 
 			h1 {
 				font-size: 1.35em;
