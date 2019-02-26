@@ -15,17 +15,17 @@
 <!-- Header -->
 <header id="header">
     <div class="inner">
-        <a href="#" class="logo">Embellir la vie</a>
+        <a href="{{ path('homepage') }}" class="logo">Embellir la vie</a>
         <nav id="nav">
-            <a href="#">Accueil</a>
-            <a href="#">Les cours</a>
+            <a href="{{ path('homepage') }}">Accueil</a>
+            <a href="{{ path('classes') }}">Les cours</a>
             <a href="#">Diaporama</a>
             <a href="#">Lieux, Horaires, Tarifs</a>
             <a href="#">Contact</a>
         </nav>
     </div>
 </header>
-<a href="#menu" class="navPanelToggle"><img src="{{ asset('images/bars-solid.svg') }}" width="30px"></a>
+<a href="{{ path('homepage') }}" class="navPanelToggle"><img src="{{ asset('images/bars-solid.svg') }}" width="30px"></a>
 
 <!-- Banner -->
 <section id="banner">
