@@ -4075,7 +4075,7 @@ body.is-loading #banner:after {
 
     .two .inner article:first-child {
         padding-right: 0;
-        padding-bottom: 2em;
+        padding-bottom: 0;
     }
 
     .two .inner article:last-child {

@@ -25,7 +25,8 @@
         </nav>
     </div>
 </header>
-<a href="{{ path('homepage') }}" class="navPanelToggle"><img src="{{ asset('images/bars-solid.svg') }}" width="30px"></a>
+<a href="{{ path('homepage') }}" class="navPanelToggle"><img src="{{ asset('images/bars-solid.svg') }}"
+                                                             width="30px"></a>
 
 <!-- Banner -->
 <section id="banner">
@@ -37,15 +38,26 @@
 {% block body %}{% endblock %}
 
 <!-- Footer -->
-<section id="footer">
-    <div class="image fit">
-        <img src="{{ asset('images/logo.webp') }}">
-    </div>
-    <div class="copyright">
-        &copy; 2019 EMBELLIR LA VIE association loi 1901, affiliée à l’Office Municipal de la Culture de Maisons–Alfort.
-        Tout droit réservé.
-        <br>Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
-    </div>
+<section id="footer" class="two">
+    <div class="inner">
+        <article>
+            <div class="content">
+                <div class="copyright">
+                    &copy; 2019 EMBELLIR LA VIE association loi 1901<br>
+                    Affiliée à l’Office Municipal de la Culture de Maisons–Alfort<br>
+                    Tout droit réservé.
+                    Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a
+                            href="https://unsplash.com/">Unsplash</a>
+                </div>
+            </div>
+        </article>
+        <article class="responsive">
+            <div class="content">
+                <div class="image fit">
+                    <img src="{{ asset('images/logo.webp') }}" alt=""/>
+                </div>
+            </div>
+        </article>
     </div>
 </section>
 
