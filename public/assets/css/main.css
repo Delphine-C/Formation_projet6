@@ -2781,7 +2781,11 @@ img.round {
 #portrait {
     border-radius: 50%;
     width: 250px;
+<<<<<<< HEAD
     margin: auto;
+=======
+    margin-left: 6em;
+>>>>>>> e46015fd5412aa8e0344d754831934f49ba54f95
 }
 
 /* List */
@@ -4075,7 +4079,11 @@ body.is-loading #banner:after {
 
     .two .inner article:first-child {
         padding-right: 0;
+<<<<<<< HEAD
         padding-bottom: 0;
+=======
+        padding-bottom: 2em;
+>>>>>>> e46015fd5412aa8e0344d754831934f49ba54f95
     }
 
     .two .inner article:last-child {
