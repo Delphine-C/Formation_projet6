@@ -4,6 +4,7 @@
 
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('assets/css/carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
 {% endblock %}
 
 {% block body %}
@@ -21,7 +22,7 @@
                 <h2>Année 2017-2018</h2>
             </header>
             <div class="row justify-content-center">
-                <div id="carouselExampleIndicators" class="carousel slide col-lg-8" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide col-lg-offset-2 col-lg-8" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -62,7 +63,7 @@
                 <h2>Année 2016-2017</h2>
             </header>
             <div class="row justify-content-center">
-                <div id="secondcarousel" class="carousel slide col-lg-8" data-ride="carousel">
+                <div id="secondcarousel" class="carousel slide col-lg-offset-2 col-lg-8" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#secondcarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#secondcarousel" data-slide-to="1"></li>
