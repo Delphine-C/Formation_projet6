@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Informations{% endblock %}
+
+{% block body %}
+    <!-- Section -->
+    <section id="one">
+        <div class="inner">
+            <article>
+                <div class="content">
+                    <header>
+                        <h2>Lieux et horaires</h2>
+                    </header>
+                    <p>
+                        Il y a des cours du jour et des cours du soir.
+                    </p>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Jour</th>
+                                <th>Heure</th>
+                                <th>Adresse</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Lundi</td>
+                                <td>14h - 16h</td>
+                                <td>Espace Loisir Charentonneau, 122 Rue Roger François 94700
+                                    Maisons-Alfort ( métro ligne 8 Maisons-Alfort Stade)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lundi</td>
+                                <td>20h30 - 22h30</td>
+                                <td>10 Rue Chevreul 94700 Maisons-Alfort ( métro ligne 8 Maisons-Alfort Stade)</td>
+                            </tr>
+                            <tr>
+                                <td>Vendredi</td>
+                                <td>9h - 11h</td>
+                                <td>Espace Loisir Charentonneau, 122 Rue Roger François 94700
+                                    Maisons-Alfort ( métro ligne 8 Maisons-Alfort Stade)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Samedi</td>
+                                <td>17h - 19h</td>
+                                <td>10 Rue Chevreul 94700 Maisons-Alfort ( métro ligne 8 Maisons-Alfort Stade)</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="image fit">
+        <img src="{{ asset('images/tea-time.jpg') }}" alt="" width="20%" class="round"/>
+    </div>
+
+    <!-- Section -->
+    <section class="two">
+        <div class="inner">
+            <article>
+                <div class="content">
+                    <header>
+                        <h2>Tarifs</h2>
+                    </header>
+                    <p>
+                        L’adhésion annuel à l’association EMBELLIR LA VIE est de 60 € comprenant la fourniture gratuite
+                        de mercerie et patrons et la mise à disposition de machines à coudre.<br>
+
+                        Deux formules sont alors possibles :
+                    </p>
+                    <ul>
+                        <li>Une carte de 10 séances de cours à 100€ (cours avec 8 personnes maximum).</li>
+                        <li>Un abonnement à l’année de 270 € pour un cours par semaine en dehors des vacances scolaires
+                            payable en 3 ou 10 fois.
+                        </li>
+                    </ul>
+                    <p>
+                        Le thé à l’aiguille est gratuit.<br>
+                        Les ateliers ponctuels sont à des prix variables en fonction des intervenants, du matériel, des
+                        locaux et des déplacements nécessaires.
+                    </p>
+                </div>
+            </article>
+            <article class="alt">
+                <div class="content">
+                    <div class="image fit">
+                        <img src="{{ asset('images/home/sewing.jpg') }}" alt=""/>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+{% endblock %}
