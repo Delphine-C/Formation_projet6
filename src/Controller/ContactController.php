@@ -19,14 +19,34 @@ class ContactController extends AbstractController
     /**
      * @Route("/contact", name="contact_page")
      */
-    public function getContactPage(Request $request)
+    public function getContactPage(Request $request, \Swift_Mailer $mailer)
     {
         $contact = new ContactDTO();
         $formContact = $this
             ->createForm(ContactType::class, $contact)
             ->handleRequest($request);
 
+        if ($formContact->isSubmitted() && $formContact->isValid()) {
+            // Test recaptcha
 
+            $monMail = getenv('mail_address');
+
+            $message = (new \Swift_Message(""))
+                ->setFrom(['embellir-la-vie@mail.com' => 'Embellir la vie'])
+                ->setTo($monMail)
+                ->setBody(
+                    $this->renderView(
+                        'mail.html.twig', [
+                            'contact' => $contact
+                        ]
+                    ),
+                    'text/html'
+                );
+
+            $mailer->send($message);
+
+            return $this->redirect($request->getUri());
+        }
         return $this->render('contact.html.twig', [
             'form' => $formContact->createView(),
         ]);
